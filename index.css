@@ -1,0 +1,1061 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* SLOGAN - switching on your imagination */
+
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth !important;
+    transition: 0.25s;
+}
+
+::-moz-selection{
+    background: rgba(0, 0, 0, 0.5);
+}
+
+::selection{
+    background: rgba(81, 92, 80, 0.5);
+}
+
+::-webkit-scrollbar {
+    width: 2vh;
+}
+
+::-webkit-scrollbar-track {
+    background: #3b4a49;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 2vh;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.25);
+}
+
+html{
+    cursor: pointer;
+}
+
+img{
+    pointer-events: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+body{
+    cursor: auto;
+    --txt1: white;
+    --txt2: rgb(200, 200, 200);
+    --color1: #5cd85a;
+    --color2: #2ab67b;
+    --background1: #192a29;
+    --background2: #132221;
+    --background3: #0b1616;
+    --button1: #5cd85a;
+    --button1_hover: #46c744;
+    --button2: rgba(150, 150, 150, 0.25);
+    --button2_hover: rgba(125, 125, 125, 0.25);
+    --hr: #2f4545;
+}
+
+button{
+    font-family: inherit;
+}
+
+.main{
+    font-family: 'Poppins';
+    min-height: 100vh;
+    background: var(--background1);
+    color: var(--txt2);
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    padding: 0.75rem;
+    border-bottom: 0.05rem solid var(--hr);
+}
+
+.header .logo{
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-family: 'Manrope';
+    margin-top: -0.25rem;
+    margin-left: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.header .logo:hover{
+    cursor: pointer;
+}
+
+.header .logo img{
+    aspect-ratio: 1/1;
+    height: 4rem;
+}
+
+.header .logo h1{
+    color: var(--color1);
+    font-weight: 800;
+    font-size: 2.5rem;
+    letter-spacing: 0.25rem;
+    margin-top: 0.5rem;
+}
+
+.header ul{
+    list-style: none;
+    margin-left: 2rem;
+    display: flex;
+    gap: 2.5rem;
+    margin-top: 0.5rem;
+}
+
+.header ul li:hover{
+    cursor: pointer;
+    color: var(--color1);
+}
+
+.section1{
+    display: flex;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    margin-top: 5rem;
+}
+
+.section1 .txt h1{
+    font-size: 2.75rem;
+    font-weight: 700;
+    color: white;
+    width: 40rem;
+    line-height: 2.75rem;
+    margin-top: 3rem;
+}
+
+.section1 .txt h1 span{
+    color: var(--color1);
+}
+
+.section1 .txt h1 span span{
+    color: var(--color2);
+}
+
+.section1 .txt h2{
+    font-size: 1rem;
+    font-weight: 400;
+    margin-top: 2rem;
+    width: 37rem;
+}
+
+.section1 .txt .btns{
+    margin-top: 1rem;
+    display: flex;
+    gap: 0.75rem;
+}
+
+.section1 .txt .btns button{
+    padding: 1rem 1.5rem;
+    border-radius: 0.25rem;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.section1 .txt .btns .inv{
+    background: var(--button1);
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.section1 .txt .btns .inv img{
+    height: 1rem;
+    margin-right: 0.5rem;
+}
+
+.section1 .txt .btns .inv:hover{
+    box-shadow: inset 13em 0 0 0 var(--button1_hover);
+}
+
+.section1 .txt .btns .cmds:hover{
+    box-shadow: inset 11em 0 0 0 var(--button2_hover);
+}
+
+.section1 .txt .btns .cmds{
+    background: var(--button2);
+    color: white;
+}
+
+.section1 .imagery{
+    position: absolute;
+    right: 0;
+    margin-top: -1rem;
+}
+
+.section1 .imagery img{
+    aspect-ratio: 1/1;
+    height: 25rem;
+}
+
+.section2{
+    margin-top: 15rem;
+    background: var(--background2);
+    padding: 3rem;
+}
+
+.section2 .heading{
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 5rem;
+    text-align: center;
+}
+
+.section2 .container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 3rem;
+    row-gap: 5rem;
+    text-align: center;
+}
+
+.section2 .container div img{
+    aspect-ratio: 1/1;
+    height: 5rem;
+}
+
+.section2 .container div h1{
+    font-size: 2rem;
+    font-weight: 500;
+    color: var(--txt1);
+    margin-bottom: 0.5rem;
+}
+
+.section2 .container div h2{
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.section2 .container div h2 span{
+    color: var(--color2);
+    font-weight: 600;
+}
+
+.section3{
+    margin-top: 15rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    margin-bottom: 3rem;
+}
+
+.section3 .heading{
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 5rem;
+    text-align: center;
+}
+
+.section3 .container{
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3rem;
+}
+
+.section3 .container div{
+    background: var(--background2);
+    padding: 2rem;
+    border-radius: 0.5rem;
+    border: 0.05rem solid transparent;
+}
+
+.section3 .container div:hover{
+    cursor: pointer;
+    border: 0.05rem solid var(--color1);
+}
+
+.section3 .container div img{
+    aspect-ratio: 1/1;
+    height: 5rem;
+}
+
+.section3 .container div h1{
+    color: var(--txt1);
+    font-weight: 500;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.section3 .container div h2{
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.section3 .container div h2 span{
+    color: var(--color2);
+    font-weight: 600;
+}
+
+.section4{
+    margin-top: 15rem;
+    background: var(--background2);
+    padding: 3rem;
+}
+
+.section4 .heading{
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 10rem;
+    text-align: center;
+}
+
+.section4 .container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 1.25rem;
+    row-gap: 8rem;
+}
+
+.section4 .container div{
+    background: var(--background3);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    border: 0.1rem solid transparent;
+    position: relative;
+}
+
+.section4 .container div img{
+    aspect-ratio: 1/1;
+    height: 6rem;
+    margin-top: -5.5rem;
+    border-radius: 100%;
+    border: 0.75rem solid var(--background2);
+    margin-left: 1rem;
+    background: var(--background3);
+    object-fit: cover;
+}
+
+.section4 .container div h1{
+    font-size: 2rem;
+    font-weight: 500;
+    color: var(--txt1);
+}
+
+.section4 .container div h2{
+    font-size: 1rem;
+    color: var(--color2);
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    background: var(--background2);
+    width: max-content;
+    border-radius: 0.25rem;
+}
+
+.section4 .container div h3{
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--txt2);
+    margin-top: 1rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    margin-bottom: 4rem;
+}
+
+.section4 .container div h4{
+    font-size: 1rem;
+    color: var(--txt1);
+    font-weight: 400;
+    padding: 0.5rem 1.5rem;
+    background: var(--button1);
+    width: max-content;
+    border-radius: 0.25rem;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 1rem;
+}
+
+.section4 .container div h4:hover{
+    cursor: pointer;
+    box-shadow: inset 5.5em 0 0 0 var(--button1_hover);
+}
+
+.section4 .more{
+    display: flex;
+    margin-top: 5rem;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.section4 .more hr{
+    width: 45%;
+    height: 0.05rem;
+    border: none;
+    background-color: var(--hr);
+    margin-top: 2rem;
+}
+
+.section4 .more h1{
+    font-size: 1rem;
+    padding: 1rem;
+    border-radius: 0.35rem;
+    background: var(--button2);
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 20%;
+    text-align: center;
+    font-weight: 400;
+    color: var(--txt1);
+}
+
+.section4 .more h1:hover{
+    cursor: pointer;
+    box-shadow: inset 18vw 0 0 0 var(--button2_hover);
+}
+
+.footer{
+    background: var(--background3);
+    padding: 3rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.footer .right{
+    display: flex;
+    gap: 5rem;
+    justify-content: right;
+}
+
+.footer .right ul{
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+}
+
+.footer .right div .heading{
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--txt1);
+    margin-bottom: 1rem;
+}
+
+.footer .right div li{
+    font-size: 0.9rem;
+    font-weight: 400;
+    width: max-content;
+}
+
+.footer .right div li:hover{
+    color: var(--color1);
+    cursor: pointer;
+}
+
+.footer .right .contact ul{
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+}
+
+.footer .right .contact ul a{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.footer .right .contact ul #twitter img{
+    height: 1.25rem;
+}
+
+.footer .right .contact ul #instagram img{
+    height: 1.25rem;
+}
+
+.footer .right .contact ul #email{
+    margin-top: -0.25rem;
+}
+
+.footer .right .contact ul #email span{
+    height: 1.25rem;
+    color: var(--txt1);
+    text-decoration: none;
+    font-weight: 300;
+}
+
+.footer .right div a{
+    width: max-content;
+}
+
+.footer .right div img{
+    height: 1rem;
+}
+
+.footer .logo{
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-family: 'Manrope';
+    width: 14rem;
+    flex-wrap: wrap;
+}
+
+.footer .logo:hover{
+    cursor: pointer;
+}
+
+.footer .logo img{
+    aspect-ratio: 1/1;
+    height: 4rem;
+    margin-left: -0.5rem;
+}
+
+.footer .logo h1{
+    color: var(--color1);
+    font-weight: 800;
+    font-size: 2.5rem;
+    letter-spacing: 0.25rem;
+    margin-top: 0.5rem;
+}
+
+.footer .logo h2{
+    font-weight: 600;
+    font-size: 1rem;
+    margin-top: -0.75rem;
+    margin-left: -0.25rem;
+    color: var(--color2);
+}
+
+.footer .languages{
+    margin-left: -0.25rem;
+    width: max-content;
+}
+
+.footer .languages .btn{
+    margin-top: 5rem;
+    display: flex;
+    align-items: center;
+}
+
+.footer .languages .btn:hover{
+    cursor: pointer;
+    color: var(--txt1);
+}
+
+.footer .languages .btn img{
+    aspect-ratio: 1/1;
+    height: 2rem;
+    margin-right: 0.5rem;
+}
+
+.footer .languages .btn h1{
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.footer .languages .btn span{
+    font-size: 1.75rem;
+    font-weight: 200;
+    margin-left: -0.1rem;
+}
+
+.footer .copyright{
+    font-size: 0.85rem;
+    margin-left: -0.25rem;
+    opacity: 0.5;
+    margin-top: 0.5rem;
+}
+
+.header .menu{
+    display: none;
+}
+
+.footer .languages .container{
+    background: #192a29;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    height: 20rem;
+    width: 12.5rem;
+    overflow-y: scroll;
+    position: absolute;
+    margin-top: -24rem;
+    display: none;
+    transform: scale(0.9);
+}
+
+.footer .languages .container div{
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+    display: flex;
+    gap: 0.75rem;
+    font-size: 1.1rem;
+    color: var(--txt2);
+    align-items: center;
+    transition: 0s;
+}
+
+.footer .languages .container::-webkit-scrollbar {
+    width: 0.5rem;
+}
+
+.footer .languages .container::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.15);
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+}
+
+.footer .languages .container::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 0.5rem;
+}
+
+.footer .languages .container::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.25);
+    cursor: pointer;
+}
+
+.footer .languages .container div:hover{
+    background: rgba(255, 255, 255, 0.1);
+    cursor: pointer;
+}
+
+.footer .languages .container div img{
+    aspect-ratio: 1/1;
+    height: 2.5rem;
+}
+
+.footer .languages .container div h1{
+    font-size: inherit;
+    color: inherit;
+    font-weight: 400;
+}
+
+@media only screen and (max-width: 1000px){
+    .header{
+        padding: 1vw;
+        border-bottom: 0.05vw solid var(--hr);
+    }
+
+    .header ul{
+        display: none;
+    }
+
+    .header .menu{
+        display: block;
+        margin-left: auto;
+        margin-right: 2vw;
+    }
+
+    .header .menu:hover{
+        color: var(--color1);
+        cursor: pointer;
+    }
+
+    .header .menu span{
+        font-size: 6vw;
+        color: inherit;
+        transition: 0s;
+    }
+    
+    .header .logo{
+        gap: 1vw;
+        margin-top: -0.5vw;
+        margin-left: 4vw;
+    }
+    
+    .header .logo img{
+        height: 7vw;
+    }
+    
+    .header .logo h1{
+        font-size: 5vw;
+        letter-spacing: 0.5vw;
+        margin-top: 1vw;
+    }
+
+    .section1{
+        margin-left: 5vw;
+        margin-right: 5vw;
+        margin-top: 3vw;
+        text-align: center;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .section1 .txt{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    .section1 .txt h1{
+        font-size: 5vw;
+        width: 70vw;
+        line-height: 5vw;
+    }
+    
+    .section1 .txt h2{
+        font-size: 2vw;
+        margin-top: 3vw;
+        width: 65vw;
+    }
+    
+    .section1 .txt .btns{
+        margin-top: 2vw;
+        gap: 1.5vw;
+    }
+    
+    .section1 .txt .btns button{
+        padding: 2vw 3vw;
+        border-radius: 0.5vw;
+        font-size: 2vw;
+    }
+    
+    .section1 .txt .btns .inv img{
+        height: 2vw;
+        margin-right: 1vw;
+    }
+    
+    .section1 .txt .btns .inv:hover{
+        box-shadow: inset 13em 0 0 0 var(--button1_hover);
+    }
+    
+    .section1 .txt .btns .cmds:hover{
+        box-shadow: inset 11em 0 0 0 var(--button2_hover);
+    }
+    
+    .section1 .imagery{
+        position: relative;
+        margin-top: 10vw;
+    }
+    
+    .section1 .imagery img{
+        height: 45vw;
+    }
+
+    .section2{
+        margin-top: 15vw;
+        padding: 5vw;
+    }
+    
+    .section2 .heading{
+        font-size: 5vw;
+        margin-bottom: 15vw;
+    }
+    
+    .section2 .container{
+        gap: 15vw;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    .section2 .container div img{
+        height: 15vw;
+    }
+    
+    .section2 .container div h1{
+        font-size: 5vw;
+        margin-bottom: 1vw;
+    }
+    
+    .section2 .container div h2{
+        font-size: 2vw;
+        width: 70vw;
+    }
+
+    .section3{
+        margin-top: 15vw;
+        padding: 5vw;
+    }
+    
+    .section3 .heading{
+        font-size: 5vw;
+        margin-bottom: 15vw;
+    }
+    
+    .section3 .container{
+        gap: 15vw;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .section3 .container div{
+        border-radius: 1vw;
+        padding: 2vw;
+        border: 0.1vw solid transparent;
+        position: relative;
+    }
+
+    .section3 .container div:hover{
+        border: 0.1vw solid var(--color1);
+    }
+    
+    .section3 .container div img{
+        height: 15vw;
+    }
+    
+    .section3 .container div h1{
+        font-size: 5vw;
+        margin-bottom: 1vw;
+    }
+    
+    .section3 .container div h2{
+        font-size: 2vw;
+        width: 70vw;
+    }
+    
+    .section4{
+        margin-top: 15vw;
+        padding: 10vw;
+    }
+    
+    .section4 .heading{
+        font-size: 5vw;
+        margin-bottom: 15vw;
+    }
+    
+    .section4 .container{
+        gap: 15vw;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    .section4 .container div{
+        border-radius: 1vw;
+        padding: 2vw;
+        border: 0.1vw solid transparent;
+        position: relative;
+        width: 70vw;
+    }
+    
+    .section4 .container div img{
+        aspect-ratio: 1/1;
+        height: 12.5vw;
+        margin-top: -10vw;
+        border: 1.5vw solid var(--background2);
+        margin-left: 2vw;
+    }
+    
+    .section4 .container div h1{
+        font-size: 3.5vw;
+    }
+    
+    .section4 .container div h2{
+        font-size: 2vw;
+        padding: 1vw 2vw;
+        border-radius: 0.5vw;
+    }
+    
+    .section4 .container div h3{
+        font-size: 2vw;
+        margin-top: 2vw;
+        margin-bottom: 8vw;
+    }
+    
+    .section4 .container div h4{
+        font-size: 2vw;
+        padding: 1vw 3vw;
+        border-radius: 0.5vw;
+        margin-bottom: 2vw;
+    }
+    
+    .section4 .container div h4:hover{
+        cursor: pointer;
+        box-shadow: inset 5.5em 0 0 0 var(--button1_hover);
+    }
+    
+    .section4 .more{
+        margin-top: 10vw;
+        margin-bottom: 5vw;
+    }
+    
+    .section4 .more hr{
+        height: 0.05vw;
+        margin-top: 3.5vw;
+    }
+    
+    .section4 .more h1{
+        font-size: 2vw;
+        padding: 2vw 2.5vw;
+        border-radius: 0.75vw;
+        width: 25%;
+    }
+    
+    .section4 .more h1:hover{
+        box-shadow: inset 10em 0 0 0 var(--button2_hover);
+    }
+
+    .footer{
+        padding: 5vw;
+        grid-template-columns: 1fr;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    .footer .right{
+        display: flex;
+        gap: 20vw;
+        justify-content: center;
+        margin-top: 5vw;
+    }
+    
+    .footer .right ul{
+        grid-template-columns: 1fr;
+        gap: 1vw;
+    }
+    
+    .footer .right div .heading{
+        font-size: 2.5vw;
+        margin-bottom: 2vw;
+    }
+    
+    .footer .right div li{
+        font-size: 2vw;
+    }
+    
+    .footer .right .contact ul #twitter img{
+        height: 2.5vw;
+    }
+    
+    .footer .right .contact ul #instagram img{
+        height: 2.5vw;
+    }
+    
+    .footer .right .contact ul #email{
+        margin-top: -0.5vw;
+    }
+    
+    .footer .right .contact ul #email span{
+        height: 2.5vw;
+    }
+    
+    .footer .right div img{
+        height: 2vw;
+    }
+    
+    .footer .logo{
+        display: flex;
+        align-items: center;
+        gap: 1vw;
+        width: 30vw;
+        margin: auto;
+    }
+    
+    .footer .logo img{
+        height: 7vw;
+    }
+    
+    .footer .logo h1{
+        font-size: 5vw;
+        letter-spacing: 0.5vw;
+        margin-top: 1vw;
+    }
+    
+    .footer .logo h2{
+        font-size: 2vw;
+    }
+
+    .footer .left .languages{
+        width: 100%;
+    }
+    
+    .footer .languages .btn{
+        margin-top: 5vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .footer .languages .btn img{
+        aspect-ratio: 1/1;
+        height: 2rem;
+        margin-right: 0.5rem;
+    }
+    
+    .footer .languages .btn h1{
+        font-size: 2vw;
+    }
+    
+    .footer .languages .btn span{
+        font-size: 3.5vw;
+        margin-left: -0.25vw;
+    }
+    
+    .footer .copyright{
+        font-size: 1.5vw;
+        margin-left: -0.25rem;
+        margin-top: 1vw;
+    }
+    
+    .footer .languages .container{
+        background: #192a29;
+        padding: 0.5rem;
+        border-radius: 0.5rem;
+        height: 20rem;
+        width: 12.5rem;
+        overflow-y: scroll;
+        position: absolute;
+        margin-top: -24rem;
+        display: none;
+        transform: scale(0.9);
+    }
+    
+    .footer .languages .container div{
+        padding: 0.25rem 0.5rem;
+        border-radius: 0.25rem;
+        display: flex;
+        gap: 0.75rem;
+        font-size: 1.1rem;
+        color: var(--txt2);
+        align-items: center;
+        transition: 0s;
+    }
+    
+    .footer .languages .container::-webkit-scrollbar {
+        width: 0.5rem;
+    }
+    
+    .footer .languages .container::-webkit-scrollbar-track {
+        background: rgba(255, 255, 255, 0.15);
+        border-top-right-radius: 0.5rem;
+        border-bottom-right-radius: 0.5rem;
+    }
+    
+    .footer .languages .container::-webkit-scrollbar-thumb {
+        background: rgba(255, 255, 255, 0.15);
+        border-radius: 0.5rem;
+    }
+    
+    .footer .languages .container::-webkit-scrollbar-thumb:hover {
+        background: rgba(255, 255, 255, 0.25);
+        cursor: pointer;
+    }
+    
+    .footer .languages .container div:hover{
+        background: rgba(255, 255, 255, 0.1);
+        cursor: pointer;
+    }
+    
+    .footer .languages .container div img{
+        aspect-ratio: 1/1;
+        height: 2.5rem;
+    }
+    
+    .footer .languages .container div h1{
+        font-size: inherit;
+        color: inherit;
+        font-weight: 400;
+    }
+}
