@@ -1,0 +1,494 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* SLOGAN - switching on your imagination */
+
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth !important;
+    transition: 0.25s;
+}
+
+::-moz-selection{
+    background: rgba(0, 0, 0, 0.5);
+}
+
+::selection{
+    background: rgba(81, 92, 80, 0.5);
+}
+
+::-webkit-scrollbar {
+    width: 2vh;
+}
+
+::-webkit-scrollbar-track {
+    background: #3b4a49;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 2vh;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.25);
+}
+
+html{
+    cursor: pointer;
+}
+
+img{
+    pointer-events: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+body{
+    cursor: auto;
+    --txt1: white;
+    --txt2: rgb(200, 200, 200);
+    --color1: #5cd85a;
+    --color2: #2ab67b;
+    --background1: #192a29;
+    --background2: #132221;
+    --background3: #0b1616;
+    --button1: #5cd85a;
+    --button1_hover: #46c744;
+    --button2: rgba(150, 150, 150, 0.25);
+    --button2_hover: rgba(125, 125, 125, 0.25);
+    --hr: #2f4545;
+}
+
+button{
+    font-family: inherit;
+}
+
+.main{
+    font-family: 'Poppins';
+    min-height: 100vh;
+    background: var(--background1);
+    color: var(--txt2);
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    padding: 0.75rem;
+    border-bottom: 0.05rem solid var(--hr);
+}
+
+.header .logo{
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-family: 'Manrope';
+    margin-top: -0.25rem;
+    margin-left: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.header .logo:hover{
+    cursor: pointer;
+}
+
+.header .logo img{
+    aspect-ratio: 1/1;
+    height: 4rem;
+}
+
+.header .logo h1{
+    color: var(--color1);
+    font-weight: 800;
+    font-size: 2.5rem;
+    letter-spacing: 0.25rem;
+    margin-top: 0.5rem;
+}
+
+.header ul{
+    list-style: none;
+    margin-left: 2rem;
+    display: flex;
+    gap: 2.5rem;
+    margin-top: 0.5rem;
+}
+
+.header ul li:hover{
+    cursor: pointer;
+    color: var(--color1);
+}
+
+.search{
+    margin-left: 3rem;
+    margin-right: 3rem;
+    margin-top: 7rem;
+}
+
+.search .heading{
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--txt1);
+    margin-bottom: 3rem;
+}
+
+.search .container{
+    background: var(--background2);
+    padding: 0.5rem;
+    border-radius: 2.5rem;
+    display: flex;
+    margin-bottom: 10rem;
+}
+
+.search .container input{
+    background: transparent;
+    outline: none;
+    border: none;
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: var(--txt2);
+    font-family: inherit;
+    margin-left: 1rem;
+    width: 87%;
+}
+
+.search .container button{
+    background: var(--button1);
+    padding: 0.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--txt1);
+    font-weight: 400;
+    width: 7rem;
+    border-radius: 2.5rem;
+    border: none;
+    margin-left: auto;
+}
+
+.search .container button:hover{
+    cursor: pointer;
+    box-shadow: inset 9em 0 0 0 var(--button1_hover);
+}
+
+.search .container button span{
+    font-size: 1.75rem;
+}
+
+.search .servers{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 1.25rem;
+    row-gap: 8rem;
+}
+
+.search .servers div{
+    background: var(--background2);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    border: 0.1rem solid transparent;
+    position: relative;
+}
+
+.search .servers div img{
+    aspect-ratio: 1/1;
+    height: 6rem;
+    margin-top: -5.5rem;
+    border-radius: 100%;
+    border: 0.75rem solid var(--background1);
+    margin-left: 1rem;
+    background: var(--background2);
+    object-fit: cover;
+}
+
+.search .servers div h1{
+    font-size: 2rem;
+    font-weight: 500;
+    color: var(--txt1);
+}
+
+.search .servers div h2{
+    font-size: 1rem;
+    color: var(--color2);
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    background: var(--background1);
+    width: max-content;
+    border-radius: 0.25rem;
+}
+
+.search .servers div h3{
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--txt2);
+    margin-top: 1rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    margin-bottom: 4rem;
+}
+
+.search .servers div h4{
+    font-size: 1rem;
+    color: var(--txt1);
+    font-weight: 400;
+    padding: 0.5rem 1.5rem;
+    background: var(--button1);
+    width: max-content;
+    border-radius: 0.25rem;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 1rem;
+}
+
+.search .servers div h4:hover{
+    cursor: pointer;
+    box-shadow: inset 5.5em 0 0 0 var(--button1_hover);
+}
+
+.search .more{
+    display: flex;
+    margin-top: 5rem;
+    justify-content: center;
+    margin-bottom: 5rem;
+}
+
+.search .more hr{
+    width: 45%;
+    height: 0.05rem;
+    border: none;
+    background-color: var(--hr);
+    margin-top: 2rem;
+}
+
+.search .more h1{
+    font-size: 1rem;
+    padding: 1rem;
+    border-radius: 0.35rem;
+    background: var(--button2);
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 20%;
+    text-align: center;
+    font-weight: 400;
+    color: var(--txt1);
+}
+
+.search .more h1:hover{
+    cursor: pointer;
+    box-shadow: inset 18vw 0 0 0 var(--button2_hover);
+}
+
+.footer{
+    background: var(--background3);
+    padding: 3rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.footer .right{
+    display: flex;
+    gap: 5rem;
+    justify-content: right;
+}
+
+.footer .right ul{
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+}
+
+.footer .right div .heading{
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--txt1);
+    margin-bottom: 1rem;
+}
+
+.footer .right div li{
+    font-size: 0.9rem;
+    font-weight: 400;
+    width: max-content;
+}
+
+.footer .right div li:hover{
+    color: var(--color1);
+    cursor: pointer;
+}
+
+.footer .right .contact ul{
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+}
+
+.footer .right .contact ul a{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.footer .right .contact ul #twitter img{
+    height: 1.25rem;
+}
+
+.footer .right .contact ul #instagram img{
+    height: 1.25rem;
+}
+
+.footer .right .contact ul #email{
+    margin-top: -0.25rem;
+}
+
+.footer .right .contact ul #email span{
+    height: 1.25rem;
+    color: var(--txt1);
+    text-decoration: none;
+    font-weight: 300;
+}
+
+.footer .right div a{
+    width: max-content;
+}
+
+.footer .right div img{
+    height: 1rem;
+}
+
+.footer .logo{
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-family: 'Manrope';
+    width: 14rem;
+    flex-wrap: wrap;
+}
+
+.footer .logo:hover{
+    cursor: pointer;
+}
+
+.footer .logo img{
+    aspect-ratio: 1/1;
+    height: 4rem;
+    margin-left: -0.5rem;
+}
+
+.footer .logo h1{
+    color: var(--color1);
+    font-weight: 800;
+    font-size: 2.5rem;
+    letter-spacing: 0.25rem;
+    margin-top: 0.5rem;
+}
+
+.footer .logo h2{
+    font-weight: 600;
+    font-size: 1rem;
+    margin-top: -0.75rem;
+    margin-left: -0.25rem;
+    color: var(--color2);
+}
+
+.footer .languages{
+    margin-left: -0.25rem;
+    width: max-content;
+}
+
+.footer .languages .btn{
+    margin-top: 5rem;
+    display: flex;
+    align-items: center;
+}
+
+.footer .languages .btn:hover{
+    cursor: pointer;
+    color: var(--txt1);
+}
+
+.footer .languages .btn img{
+    aspect-ratio: 1/1;
+    height: 2rem;
+    margin-right: 0.5rem;
+}
+
+.footer .languages .btn h1{
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.footer .languages .btn span{
+    font-size: 1.75rem;
+    font-weight: 200;
+    margin-left: -0.1rem;
+}
+
+.footer .copyright{
+    font-size: 0.85rem;
+    margin-left: -0.25rem;
+    opacity: 0.5;
+    margin-top: 0.5rem;
+}
+
+.footer .languages .container{
+    background: var(--background2);
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    height: 20rem;
+    width: 12.5rem;
+    overflow-y: scroll;
+    position: absolute;
+    margin-top: -24rem;
+    display: none;
+    transform: scale(0.9);
+}
+
+.footer .languages .container div{
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+    display: flex;
+    gap: 0.75rem;
+    font-size: 1.1rem;
+    color: var(--txt2);
+    align-items: center;
+    transition: 0s;
+}
+
+.footer .languages .container::-webkit-scrollbar {
+    width: 0.5rem;
+}
+
+.footer .languages .container::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.15);
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+}
+
+.footer .languages .container::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 0.5rem;
+}
+
+.footer .languages .container::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.25);
+    cursor: pointer;
+}
+
+.footer .languages .container div:hover{
+    background: rgba(255, 255, 255, 0.1);
+    cursor: pointer;
+}
+
+.footer .languages .container div img{
+    aspect-ratio: 1/1;
+    height: 2.5rem;
+}
+
+.footer .languages .container div h1{
+    font-size: inherit;
+    color: inherit;
+    font-weight: 400;
+}
