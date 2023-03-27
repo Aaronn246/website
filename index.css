@@ -72,6 +72,17 @@ button{
     color: var(--txt2);
 }
 
+.container{
+    opacity: 0;
+    transition: 2s all ease;
+    transform: translateY(1rem);
+}
+
+.container.active{
+    opacity: 1;
+    transform: translateY(0rem);
+}
+
 .header{
     display: flex;
     align-items: center;
@@ -121,9 +132,14 @@ button{
 
 .section1{
     display: flex;
-    margin-left: 3rem;
-    margin-right: 3rem;
-    margin-top: 5rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: 5rem;
+    padding-bottom: 15rem;
+    background: url(./home.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .section1 .txt h1{
@@ -203,7 +219,6 @@ button{
 }
 
 .section2{
-    margin-top: 15rem;
     background: var(--background2);
     padding: 3rem;
 }
@@ -682,9 +697,14 @@ button{
     }
 
     .section1{
-        margin-left: 5vw;
-        margin-right: 5vw;
-        margin-top: 3vw;
+        padding-left: 5vw;
+        padding-right: 5vw;
+        padding-top: 3vw;
+        padding-bottom: 15vw;
+        background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(./home.svg);
+        background-position: left;
+        background-size: 155%;
+        background-repeat: no-repeat;
         text-align: center;
         display: grid;
         grid-template-columns: 1fr;
@@ -742,7 +762,6 @@ button{
     }
 
     .section2{
-        margin-top: 15vw;
         padding: 5vw;
     }
     
